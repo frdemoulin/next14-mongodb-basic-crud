@@ -1,8 +1,8 @@
-# CRUD avec Next.js 14 et MongoDB
+# Basic CRUD with Next.js 14 and MongoDB
 
-Ajout, édition et suppression d'utilisateurs
+Add, update and delete users
 
-- Créer une base de données MongoDB via `mongosh` ou `MongoDB Compass`
-- Définir dans le fichier `.env` la chaîne de connexion à la base de données
-- Installation des dépendances JS : `npm install`
-- Démarrage du serveur de développement : `npm run dev`
+- Create a MongoDB database with `mongosh`, `MongoDB Compass` or `MongoDB cloud`
+- Define connection database string in `.env` file
+- Install JavaScript dependencies: `npm install`
+- Start local development server: `npm run dev`
