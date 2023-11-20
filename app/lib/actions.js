@@ -5,12 +5,12 @@ import { connectToDB } from "./utils";
 import { redirect } from "next/navigation";
 
 export const addUser = async (formData) => {
-    // on récupère les données postées dans le formulaire
+    // fetch data from from
     const { username, password, email, phone, isAdmin, isActive } = Object.fromEntries(formData);
 
     try {
         connectToDB();
-        // on crée le nouvel utilisateur dans MongoDB
+        // create new user in DB
         const newUser = new User({ username, password, email, phone, isAdmin, isActive });
         await newUser.save();
     } catch (error) {
@@ -59,7 +59,7 @@ export const deleteUser = async (formData) => {
 
     try {
         connectToDB();
-        // on supprime l'utilisateur dans MongoDB
+        // delete user from DB
         await User.findByIdAndDelete(id);
     } catch (error) {
         console.log(error);

@@ -39,4 +39,5 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// create new schema or export existed one
 export const User = mongoose.models.User || mongoose.model("User", userSchema);
